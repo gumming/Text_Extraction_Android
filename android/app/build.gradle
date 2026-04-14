@@ -48,11 +48,13 @@ flutter {
 }
 
 dependencies {
-    // Add these dependencies for multi-language text recognition support
-    implementation 'com.google.mlkit:text-recognition-chinese:16.0.1'
-    implementation 'com.google.mlkit:text-recognition-devanagari:16.0.1'
-    implementation 'com.google.mlkit:text-recognition-japanese:16.0.1'
-    implementation 'com.google.mlkit:text-recognition-korean:16.0.1'
-
-    // Keep the rest of your existing dependencies
+    // هذه المكتبة تدعم اللغات المكتوبة بخطوط لاتينية (الإنجليزية، الفرنسية، الخ...)
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:19.0.0'
+    
+    // هذه المكتبة تدعم اللغات المكتوبة بخطوط غير لاتينية (العربية، الصينية، اليابانية، الكورية، الديفاناغارية)
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition-chinese:16.0.0'
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition-devanagari:16.0.0'
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition-japanese:16.0.0'
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition-korean:16.0.0'
 }
+
